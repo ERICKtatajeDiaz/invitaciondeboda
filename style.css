@@ -1,0 +1,727 @@
+/* Importar fuentes adicionales */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;600&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500&family=Cinzel:wght@400;500;600&family=Italiana&family=Alex+Brush&family=Crimson+Text:wght@400;600&family=Libre+Baskerville:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif; /* Fuente elegante por defecto */
+    background: linear-gradient(135deg, #f9f9f6 0%, #f0ede8 100%);
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Encabezado */
+.iniciales {
+    font-family: 'Alex Brush', cursive;
+    font-size: 4rem;
+    color: #c4a876;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.texto-biblico {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    margin: 1rem 0 2rem;
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.foto {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 3px solid #c4a876; /* Borde dorado agregado */
+}
+
+/* Tarjeta Principal */
+.tarjeta {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.tarjeta p {
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* NUEVA FUENTE MÁS ELEGANTE Y LEGIBLE PARA LOS NOMBRES */
+.tarjeta h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 3.5rem;
+    margin: 1rem 0;
+    color: #c4a876;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    font-size: 1rem;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.fecha {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: #c4a876;
+    font-weight: 600;
+}
+
+.play {
+    margin: 2rem 0;
+}
+
+.play p {
+    font-family: 'Cinzel', serif;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.play-btn {
+    background: linear-gradient(135deg, #c4a876 0%, #b39660 100%);
+    border: none;
+    border-radius: 50%;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(196, 168, 118, 0.4);
+    transition: transform 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Contador interno */
+.contador-interno {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(196, 168, 118, 0.2);
+}
+
+.contador-interno p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #c4a876;
+    font-weight: 600;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    gap: 0.5rem;
+}
+
+#countdown div {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f6f3 100%);
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+#countdown span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #c4a876;
+    font-family: 'Cinzel', serif;
+}
+
+#countdown small {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    color: #666;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Secciones Generales */
+.seccion-padres, .seccion-padrinos, .seccion-lugar, 
+.seccion-recepcion, .seccion-itinerario, .seccion-vestimenta,
+.seccion-confirmacion, .seccion-regalo {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.titulo-seccion {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+/* Padres */
+.padres-grupo {
+    margin: 2rem 0;
+}
+
+.padres-grupo h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #c4a876;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.padres-grupo p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Lugar de Ceremonia */
+.icono-iglesia {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #c4a876;
+}
+
+.titulo-lugar {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.info-ceremonia {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(248, 246, 243, 0.8);
+    border-radius: 10px;
+}
+
+.hora-ceremonia {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #c4a876;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.direccion-ceremonia {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 400;
+}
+
+.foto-iglesia {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 3px solid #c4a876; /* Borde dorado agregado */
+}
+
+.btn-mapa {
+    background: linear-gradient(135deg, #c4a876 0%, #b39660 100%);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(196, 168, 118, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-mapa:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(196, 168, 118, 0.6);
+}
+
+/* Sección de Recepción */
+.seccion-recepcion .titulo-lugar {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.seccion-recepcion .direccion-ceremonia {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+    font-weight: 400;
+}
+
+.seccion-recepcion .btn-mapa {
+    background: linear-gradient(135deg, #c4a876 0%, #b39660 100%);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(196, 168, 118, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.seccion-recepcion .btn-mapa:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(196, 168, 118, 0.6);
+}
+
+.imagen-recepcion img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 3px solid #c4a876; /* Borde dorado agregado */
+    margin-bottom: 1.5rem;
+}
+
+/* ITINERARIO CENTRADO */
+.titulo-itinerario {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #c4a876, #b39660);
+}
+
+.evento {
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.icono-evento {
+    font-size: 1.5rem;
+    background: white;
+    padding: 0.8rem;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border: 2px solid #c4a876;
+    z-index: 1;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.info-evento {
+    text-align: center;
+}
+
+.hora {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #c4a876;
+    display: block;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+.descripcion {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* Vestimenta */
+.titulo-vestimenta {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #c4a876;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.tipo-vestimenta {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #c4a876;
+    margin: 1rem 0 2rem;
+    letter-spacing: 3px;
+}
+
+.vestimenta-iconos {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.vestido-icono, .traje-icono {
+    font-size: 4rem;
+}
+
+.nota-vestimenta {
+    margin-top: 2rem;
+}
+
+.nota-vestimenta p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    margin: 1rem 0;
+    line-height: 1.4;
+}
+
+.nota-vestimenta strong {
+    font-family: 'Cinzel', serif;
+    color: #c4a876;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.aclaracion {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.9rem !important;
+    color: #888 !important;
+}
+
+.nota-niños {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(248, 246, 243, 0.8);
+    border-radius: 10px;
+}
+
+.nota-niños p {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Sección de Sugerencia de Regalo */
+.titulo-regalo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.mensaje-regalo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    margin: 2rem 0;
+    font-weight: 500;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.iconos-regalo {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.icono-sobre, .icono-caja {
+    font-size: 4rem;
+    color: #c4a876;
+}
+
+.opciones-regalo {
+    margin: 2rem 0;
+}
+
+.opcion-regalo {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: rgba(248, 246, 243, 0.8);
+    border-radius: 10px;
+}
+
+.opcion-regalo h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #c4a876;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info-regalo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.numero-cuenta {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #c4a876;
+    margin: 0.5rem 0;
+    letter-spacing: 2px;
+}
+
+.nombre-titular {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Sección de Confirmación */
+.titulo-confirmacion {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: #c4a876;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.mensaje-confirmacion {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    margin: 2rem 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.btn-confirmar {
+    background: linear-gradient(135deg, #c4a876 0%, #b39660 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(196, 168, 118, 0.4);
+    transition: all 0.3s ease;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-confirmar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(196, 168, 118, 0.6);
+}
+
+.frase-amor {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #666;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.foto-confirmacion {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-top: 2rem;
+    border: 3px solid #c4a876; /* Borde dorado agregado */
+}
+
+/* Fotos que cambian */
+.seccion-fotos {
+    margin: 3rem 0;
+}
+
+.foto-scroll {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 3px solid #c4a876; /* Borde dorado agregado */
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .iniciales {
+        font-size: 3rem;
+    }
+    
+    .tarjeta h1 {
+        font-size: 2.5rem;
+    }
+    
+    .fecha {
+        font-size: 2.5rem;
+    }
+    
+    .contador-interno p {
+        font-size: 1.1rem;
+    }
+    
+    #countdown span {
+        font-size: 1.5rem;
+    }
+    
+    #countdown div {
+        padding: 0.8rem 0.3rem;
+    }
+    
+    .vestimenta-iconos {
+        gap: 2rem;
+    }
+    
+    .vestido-icono, .traje-icono {
+        font-size: 3rem;
+    }
+    
+    .titulo-confirmacion {
+        font-size: 2.2rem;
+    }
+    
+    .mensaje-confirmacion {
+        font-size: 0.9rem;
+    }
+    
+    .btn-confirmar {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .timeline {
+        padding-left: 2.5rem;
+    }
+    
+    .timeline::before {
+        left: 1.25rem;
+    }
+    
+    .icono-evento {
+        left: -2.5rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 1.2rem;
+        padding: 0.6rem;
+    }
+
+    .titulo-regalo {
+        font-size: 2.2rem;
+    }
+    
+    .iconos-regalo {
+        gap: 2rem;
+    }
+    
+    .icono-sobre, .icono-caja {
+        font-size: 3rem;
+    }
+    
+    .mensaje-regalo {
+        font-size: 0.9rem;
+    }
+    
+    .numero-cuenta {
+        font-size: 1rem;
+    }
+    
+}
